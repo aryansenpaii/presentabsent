@@ -1,6 +1,6 @@
 import styles from './style';
 
-import {Detail, Login, Navbar} from './components';
+import {Details, Login, Navbar} from './components';
 
 const App = () => (
   <div className='bg-primary w-full overflow-hidden'>
