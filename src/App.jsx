@@ -3,7 +3,7 @@ import styles from './style';
 import {Details, Login, Navbar} from './components';
 
 const App = () => (
-  <div className='px-10 py-10'>
+  <div className='bg-[#cfbdef] px-10 py-10'>
 
     <div className='bg-[#9485db] h-full w-full overflow-hidden rounded-xl'>
       <div className={`bg-[#9989e0] ${styles.paddingX} ${styles.flexCenter}`}>
