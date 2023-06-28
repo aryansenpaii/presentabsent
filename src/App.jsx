@@ -1,9 +1,9 @@
 import styles from './style';
 
-import {Details, Login, Navbar} from './components';
+import {LoginCarousel, Login, Navbar} from './components';
 
 const App = () => (
-  <div className='bg-[#cfbdef] px-10 py-10'>
+  <div className='bg-[#cfbdef] px-10 py-10 w-full h-screen'>
 
     <div className='bg-[#9485db] h-full w-full overflow-hidden rounded-xl'>
       <div className={`bg-[#9989e0] ${styles.paddingX} ${styles.flexCenter}`}>
@@ -12,10 +12,17 @@ const App = () => (
         </div>
       </div>
 
-      <div className={`bg-[#9989e0] ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
+      <div className={`bg-[#9989e0] ${styles.paddingX} ${styles.flexStart} flex h-full`}>
+        <div className={`${styles.boxWidth} flex flex-row w-full h-full`}>
           <Login />
-          <Details />
+          <div className='container mx-auto p-4'>
+            <LoginCarousel>
+              <div className="slide"><img src='https://m.media-amazon.com/images/I/81vLoHS-LKL._AC_UF1000,1000_QL80_.jpg' /></div>
+              <div className="slide"><img src='https://m.media-amazon.com/images/I/81vLoHS-LKL._AC_UF1000,1000_QL80_.jpg' /></div>
+              <div className="slide">Slide 3</div>
+              <div className="slide">Slide 4</div>
+            </LoginCarousel>
+          </div>
         </div>
       </div>
     </div>
