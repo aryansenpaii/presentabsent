@@ -15,14 +15,7 @@ const App = () => (
       <div className={`bg-[#9989e0] ${styles.paddingX} ${styles.flexStart} flex h-full`}>
         <div className={`${styles.boxWidth} flex flex-row w-full h-full`}>
           <Login />
-          <div className='container mx-auto p-4'>
-            <LoginCarousel>
-              <div className="slide"><img src='https://m.media-amazon.com/images/I/81vLoHS-LKL._AC_UF1000,1000_QL80_.jpg' /></div>
-              <div className="slide"><img src='https://m.media-amazon.com/images/I/81vLoHS-LKL._AC_UF1000,1000_QL80_.jpg' /></div>
-              <div className="slide">Slide 3</div>
-              <div className="slide">Slide 4</div>
-            </LoginCarousel>
-          </div>
+          <LoginCarousel />
         </div>
       </div>
     </div>
